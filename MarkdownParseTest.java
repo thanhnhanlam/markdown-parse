@@ -18,7 +18,7 @@ public class MarkdownParseTest {
         links.add("https://something.com");
         links.add("some-thing.html");
 
-        String content = Files.readString(new Path.of("test-file.md"));
+        String content = Files.readString(Path.of("test-file.md"));
 
         ArrayList<String> parsedLinks = MarkdownParse.getLinks(content);
         
@@ -34,7 +34,7 @@ public class MarkdownParseTest {
         links.add("This part breaks the program! How do we fix this?");
         links.add("some-thing.html");
 
-        String content = Files.readString(new Path.of("test-file2.md"));
+        String content = Files.readString(Path.of("test-file2.md"));
         
         ArrayList<String> parsedLinks = MarkdownParse.getLinks(content);
         
