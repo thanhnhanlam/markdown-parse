@@ -23,7 +23,11 @@ public class MarkdownParse {
                 currentIndex = markdown.indexOf("[", currentIndex) + 1;
                 continue;
             }
-            toReturn.add(markdown.substring(openParen + 1, closeParen));
+            
+            String link = markdown.substring(openParen + 1, closeParen);
+            if (link.replaceAll("\\s+","") == link){
+                toReturn.add(link);
+            }
             currentIndex = closeParen + 1;
         }
 
