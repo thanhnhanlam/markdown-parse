@@ -31,7 +31,6 @@ public class MarkdownParseTest {
         ArrayList<String> links = new ArrayList<String>();
 
         links.add("https://something.com");
-        links.add("This part breaks the program! How do we fix this?");
         links.add("some-thing.html");
 
         String content = Files.readString(Path.of("test-file2.md"));
