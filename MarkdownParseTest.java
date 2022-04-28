@@ -22,7 +22,7 @@ public class MarkdownParseTest {
 
         ArrayList<String> parsedLinks = MarkdownParse.getLinks(content);
         
-        assertEquals(parsedLinks, links);
+        assertEquals(links, parsedLinks);
     }
 
     @Test
@@ -37,6 +37,6 @@ public class MarkdownParseTest {
         
         ArrayList<String> parsedLinks = MarkdownParse.getLinks(content);
         
-        assertEquals(parsedLinks, links);
+        assertEquals(links, parsedLinks);
     }
 }
